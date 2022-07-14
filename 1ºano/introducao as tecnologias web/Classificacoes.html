@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8">
+    <!--Grupo 18, Diogo Esteves nº56927, Sonia Sousa nº56898 e Matilde Silva nº56895, PL21-->
+    <link rel="stylesheet" href="estilos/styleClassificacoes.css">
+    <title>Classificações </title>
+</head>
+<body>
+    <header class="content">
+        <div class="header">
+                <a href="PagIn.html"><img class="image" src="imagens/logo.png" height="70" alt="Logotipo, Eevee" ></a>
+            <ul class="nav">
+                <li>Pokémon
+                    <ul class="cascata">
+                        <li><a href="pokémons.html">Caraterísticas</a></li>
+                        <li><a href="origem_historica.html">Origem</a></li>
+                    </ul>
+                </li>
+                <li><a href="Classificacoes.html">Classificação</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="Perfil.html">Perfil</a></li>
+                <li><a href="login_Registo.html">Login/Registar</a></li>
+            </ul>              
+        </div>
+        <div id="colapsedNav" class="navbarC">
+        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
+        <a href="pokémons.html">Caraterísticas</a>
+        <a href="origem_histórica.html">Origem</a>
+        <a href="Classificacoes.html">Classificação</a>
+        <a href="suporte.html">Suporte</a>
+        <a href="login_Registo.html">Login/Registar</a>
+        </div>
+    </header> 
+    <div id="main">
+        <button class="openbutton" onclick="openNav()">☰</button>  
+    </div>
+
+      <script>
+      function openNav() {
+        document.getElementById("colapsedNav").style.height = "220px";
+      }
+      
+      function closeNav() {
+        document.getElementById("colapsedNav").style.height = "0px";
+      }
+      </script>
+        <br>
+        <div id="texto">
+            <h1>Classificação</h1>
+        </div>
+        <div id="pontuacoes">
+            <table class="tabela">
+                <tr>
+                  <th>Lugar</th>
+                  <th>Utilizador</th> 
+                  <th>Tempo</th>
+                  <th>Pontuação</th>
+                </tr>
+                <tr>
+                  <td>1º</td>
+                  <td>Ana</td>
+                  <td>2min 30s</td>
+                  <td>100pts</td>
+                </tr>
+                <tr>
+                  <td>2º</td>
+                  <td>Manuel</td>
+                  <td>3min 40s</td>
+                  <td>85pts</td>
+                </tr>
+                <tr>
+                  <td>3º</td>
+                  <td>Pedro</td>
+                  <td>3min 50s</td>
+                  <td>80pts</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <br>
+              <br>
+        </div>
+    <footer>
+      <p>ITW - 2021</p>
+      <p>Diogo Esteves, Sónia Sousa e Matilde Silva </p>
+    </footer>
+    </body>
+</html>

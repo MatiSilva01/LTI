@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="utf-8">
+        <!--Trabalho ITW Diogo Esteves nº56927, Sonia Sousa nº56898 e Matilde Silva nº56895-->
+        <title>Fcul Pokémon</title>
+        <link rel="stylesheet" href="estilos/stylePagIn.css">
+    </head>
+    <body>
+        <header class="content">
+            <div class="header">
+                    <a href="PagIn.html"><img class="image" alt="logo" src="imagens/logo.png" height="70"></a>
+                <ul class="nav">
+                    <li>Pokémon
+                        <ul class="cascata">
+                            <li><a href="pokémons.html">Caraterísticas</a></li>
+                            <li><a href="origem_historica.html">Origem</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Classificacoes.html">Classificação</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="Perfil.html">Perfil</a></li>
+                    <li><a href="login_Registo.html">Login/Registar</a></li>
+                </ul>              
+            </div>
+        </header>
+        <a href="regras.html"><img class="playbutton" alt="botao de jogar" src="imagens/botaojogar.png"></a>
+        <div class="audio">
+            <audio autoplay loop id="ambientSound" src="audio/somAmbiente.wav" controls></audio>
+        </div>
+        <div id="colapsedNav" class="navbarC">
+            <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
+            <a href="pokémons.html">Caraterísticas</a>
+            <a href="origem_histórica.html">Origem</a>
+            <a href="Classificacoes.html">Classificação</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="login_Registo.html">Login/Registar</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbutton" onclick="openNav()">☰</button>  
+          </div>
+
+          <script>
+          function openNav() {
+            document.getElementById("colapsedNav").style.height = "220px";
+          }
+          
+          function closeNav() {
+            document.getElementById("colapsedNav").style.height = "0px";
+          }
+          </script>
+        <footer>
+            <p>ITW - 2021</p>
+            <p>Diogo Esteves, Sónia Sousa e Matilde Silva </p>
+        </footer>
+    </body>
+</html>

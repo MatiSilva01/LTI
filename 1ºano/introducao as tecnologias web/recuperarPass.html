@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8">
+    <!--Grupo 18, Diogo Esteves nº56927, Sonia Sousa nº56898 e Matilde Silva nº56895, PL21-->
+    <link rel="stylesheet" href="estilos/styleRecuperarPass.css">
+    <script src="scripts/comportamentoRecupera.js"></script>
+    <title>Recuperar Palavra-passe</title>
+  </head>
+  <body>
+    <header class="content">
+      <div class="header">
+              <a href="PagIn.html"><img class="image" src="imagens/logo.png" height="70" alt="Logotipo, Eevee"></a>
+          <ul class="nav">
+              <li>Pokémon
+                  <ul class="cascata">
+                      <li><a href="pokémons.html">Caraterísticas</a></li>
+                      <li><a href="origem_historica.html">Origem</a></li>
+                  </ul>
+              </li>
+              <li><a href="Classificacoes.html">Classificação</a></li>
+              <li><a href="suporte.html">Suporte</a></li>
+              <li><a href="Perfil.html">Perfil</a></li>
+              <li><a href="login_Registo.html">Login/Registar</a></li>
+          </ul>              
+      </div>
+  </header>
+  <div id="colapsedNav" class="navbarC">
+      <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
+      <a href="pokémons.html">Caraterísticas</a>
+      <a href="origem_histórica.html">Origem</a>
+      <a href="Classificacoes.html">Classificação</a>
+      <a href="suporte.html">Suporte</a>
+      <a href="login_Registo.html">Login/Registar</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbutton" onclick="openNav()">☰</button>  
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("colapsedNav").style.height = "220px";
+    }
+    
+    function closeNav() {
+      document.getElementById("colapsedNav").style.height = "0px";
+    }
+    </script>
+    <div class="recuperar">
+      <h1>Recuperar Palavra-passe</h1>
+      <p>
+        Introduza o email para recuperar o acesso à conta.
+      </p>
+      <form>
+          <input type="email" id="email"  placeholder="Insira o seu email">
+          <input type="submit" id="botao" value="Submeter" onclick="funcaoAlerta()">
+       </form>
+   </div>
+   <footer id="rodape">
+    <p>ITW - 2021</p>
+    <p>Diogo Esteves, Sónia Sousa e Matilde Silva </p>
+  </footer>
+  </body>
+</html>

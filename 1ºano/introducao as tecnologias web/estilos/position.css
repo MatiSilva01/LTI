@@ -1,0 +1,92 @@
+/*Grupo 18, Diogo Esteves nº56927, Sonia Sousa nº56898 e Matilde Silva nº56895, PL21*/
+body {
+  font-size: 2vw;
+}
+
+#container {
+  margin: 3vw auto;
+  width: 90%;
+  border: 0.5vw solid #313131;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    'header header'
+    'section nav'
+    'footer footer';
+}
+
+/* ------------------------------------------------------------------------- */
+
+header {
+  grid-area: header;
+  border-bottom: 0.5vw solid #313131;
+  text-align: center;
+}
+
+#title, #subtitle {
+  display: block;
+}
+
+#title {
+  font-size: 2.5vw;
+  margin-bottom: 1vw;
+}
+
+#subtitle {
+  font-size: 2vw;
+}
+
+/* ------------------------------------------------------------------------- */
+
+nav {
+  grid-area: nav;
+  padding: 1vw;
+  border-left: 0.5vw solid #313131;
+}
+
+nav a {
+  display: block;
+  padding: 1vw;
+  color: #330000;
+  text-decoration: none;
+}
+
+#nav-title {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+nav .selected {
+  color: white;
+  background-color: #666633;
+  font-style: italic;
+}
+/* ------------------------------------------------------------------------- */
+
+section {
+  grid-area: section;
+  padding: 1vw;
+}
+
+section h2 {
+  margin-top: 1vh;
+}
+
+/* ------------------------------------------------------------------------- */
+
+footer {
+  grid-area: footer;
+  padding: 2vw;
+  text-align: center;
+  border-top: 0.5vw solid #313131;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.filename {
+  font-family: Consolas, monospace;
+}
+
+/* ------------------------------------------------------------------------- */

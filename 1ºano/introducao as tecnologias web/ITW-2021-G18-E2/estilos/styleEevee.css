@@ -1,0 +1,1310 @@
+/*   Grupo 18, Diogo Esteves nº56927, Sonia Sousa nº56898 e Matilde Silva nº56895, PL21 */
+* {
+  color: white;
+  background-color:#313131;
+  padding: 0;
+  margin-top: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;}
+p{
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+button {
+  box-shadow: 3px 4px 0px 0px #8a2a21;
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background-color:#c62d1f;
+  border-radius:18px;
+  border:1px solid #d02718;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:17px;
+  font-weight:bold;
+  padding:7px 25px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #810e05;
+}
+button:hover {
+  background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+  background-color:#f24437;
+}
+button:active {
+  position:relative;
+  top:1px;
+}
+table{
+  display: inline-block;
+  margin-left: 50px ;
+  width: 500px;
+}
+iframe{
+  width: 250px;
+  height: 303px;
+  display: inline;
+}
+#texto{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+#tutorial{
+  margin-top: 80px;
+  margin-left: 15px;
+}
+#Jogo{
+  margin-top: 50px;
+  margin-left: 15px;
+}
+#gif{
+  text-align: center;
+}
+
+
+#botoesEscolher{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+
+#audio{
+  text-align: center;}
+footer{
+  text-align: center;
+  padding: 30px;
+}
+
+.content{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 1;
+}
+.image{
+    float: left;
+    z-index: 3;
+}
+.nav{
+    margin: 2em 3em;
+    float: right;
+    z-index: 2;
+}
+.nav ul{
+    width: 70px;
+    text-align: center;
+    position: relative;
+}
+.nav li{
+    display:inline-table;
+    text-align: right;
+    padding: 0px 20px;
+    color: white;
+}
+.nav li:hover{
+    color: #c2c2c2;
+}
+.nav li a{
+    color: white;
+    font-family: sans-serif;
+}
+.nav a:hover{
+    color: #c2c2c2;
+}
+
+
+ul.nav ul.cascata{
+    position: relative;
+    top: 5px;
+    left: 50px;
+    text-align: left;
+    display: none;
+}
+ul.nav li:hover .cascata{
+    line-height: 30px;
+    display: block;
+    background-color: #313131;
+    padding-right: 70px;
+}
+.navbarC {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 75px;
+    background-color: #111; 
+    overflow: hidden;
+    padding: 0px 50px;
+    display: none;
+    transition: 0.5s;
+    margin: 0;
+    line-height: 25px;
+}
+  
+  /* The navbarC links */
+  .navbarC a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    padding: 10px;
+  }
+.navbarC a:hover {
+    color: #f1f1f1;
+  }
+.navbarC .closebutton {
+    position: absolute;
+    top: 0;
+    right: 160px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+.openbutton {
+    font-size: 20px;
+    background-color: #111;
+    color: white;
+    padding: 8px 14px;
+    position: fixed;
+    display: none;
+    border: none;
+    margin-left: 88%;
+    top: 15px;
+    z-index: 5;
+  }
+.openbutton:hover {
+    background-color: #444;
+  }
+@media only screen and (max-width:993px){
+  .nav{
+    display: none;
+  }
+  .navbarC{
+    display: block;
+  }
+  .openbutton{
+    display: block;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #estatistica{
+    margin-top: 50px;
+  }
+  #score{
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  video{
+    display: block;
+    margin: auto;
+    width: 800px;
+  }
+    /* COMECA AQUI O CRONOMETRO*/
+#contador{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+
+.bt-parar {
+  box-shadow: 3px 4px 0px 0px #8a2a21;
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background-color:#c62d1f;
+  border-radius:18px;
+  border:1px solid #d02718;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:17px;
+  font-weight:bold;
+  padding:7px 25px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #810e05;
+}
+.bt-parar:hover {
+  background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+  background-color:#f24437;
+}
+.bt-parar:active {
+  position:relative;
+  top:1px;
+}
+  .growlitheEscolher{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: 20px;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:bold;
+    padding:7px 40px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .growlitheEscolher:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+    }
+  .growlitheEscolher:active {
+    position:relative;
+    top:1px;
+  }
+  .pikachuEscolher{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: 70px;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:bold;
+    padding:7px 40px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .pikachuEscolher:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+    }
+  .pikachuEscolher:active {
+    position:relative;
+    top:1px;
+  }
+  .squirtleEscolher{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: 70px;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:bold;
+    padding:7px 40px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .squirtleEscolher:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+    }
+  .squirtleEscolher:active {
+    position:relative;
+    top:1px;
+  }
+/*tabuleiro Growlithe - 3*/
+.lavaGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/lavaG.png');
+  display: inline-block;
+}
+.pedraGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/chaoG.jpg');
+  display: inline-block;
+}
+.camaraoGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/camaraoG.png');
+  display: inline-block;
+}
+.vidaGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/vidaG.png');
+  display: inline-block;
+}
+.caminhoGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/caminhoG.png');
+  display: inline-block;
+}
+.eeveeGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/eevee2.gif');
+  display: inline-block;
+}
+.pikachuGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/pikachu.png');
+  display: inline-block;
+}
+.squirtleGrowlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/squirtle.png');
+  display: inline-block;
+}
+.Growlithe {
+  width: 50px;
+  height: 50px;
+  background-image: url('imagens/growlithe.png');
+  display: inline-block;
+}
+
+/*squirthe*/ 
+
+   .mar {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/mar.png');
+    display: inline-block;
+  }
+
+  .areia {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/areiaa.jpg');
+    display: inline-block;
+  }
+
+  .peixe {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/peixe.png');
+    display: inline-block;
+  }
+
+  .vida {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/morango.jpg');
+    display: inline-block;
+  }
+
+  .polvo {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/polvo.png');
+    display: inline-block;
+  }
+
+  .borboleta {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/borboleta.jpg');
+    display: inline-block;
+  }
+
+  .barco {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/barco.png');
+    display: inline-block;
+  }
+
+  .tubarao {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/tubaraoo.png');
+    display: inline-block;
+  }
+
+  .pika {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/pika.jpg');
+    display: inline-block;
+  }
+  .squir {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/squir.jpg');
+    display: inline-block;
+  }
+  .growl {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/growl.jpg');
+    display: inline-block;
+  }
+
+  .end {
+    width: 50px;
+    height: 50px;
+    background-image: url('imagens/eve.jpg');
+    display: inline-block;
+  }
+  /*---------------------------------------------*/
+  
+  .wall {
+    width: 50px;
+    height: 50px;
+    background-image: url('wall.png');
+    display: inline-block;
+  }
+
+ 
+  .caminho {
+    width: 50px;
+    height: 50px;
+    background-image: url('walll.png');
+    display: inline-block;
+  }
+  .ground {
+    width: 50px;
+    height: 50px;
+    background-image: url('bg.png');
+    display: inline-block;
+  }
+  .vidaa {
+    width: 50px;
+    height: 50px;
+    background-image: url('vida.png');
+    display: inline-block;
+  }
+  .eevee {
+    width: 50px;
+    height: 50px;
+    background-image: url('jogador.png');
+    display: inline-block;
+  }
+  .fruta {
+    width: 50px;
+    height: 50px;
+    background-image: url('frutaa.png');
+    display: inline-block;
+  }
+  .arvore {
+    width: 50px;
+    height: 50px;
+    background-image: url('arvore3.png');
+    display: inline-block;
+  }
+  .pedra {
+    width: 50px;
+    height: 50px;
+    background-image: url('pedra.png');
+    display: inline-block;
+  }
+  .agua {
+    width: 50px;
+    height: 50px;
+    background-image: url('agua.png');
+    display: inline-block;
+  }
+  .ponte {
+    width: 50px;
+    height: 50px;
+    background-image: url('ponte.png');
+    display: inline-block;
+  }
+  .fim {
+    width: 50px;
+    height: 50px;
+    background-image: url('eevee.gif');
+    display: inline-block;
+  }
+
+  .pikachu {
+    width: 50px;
+    height: 50px;
+    background-image: url('pikachu.png');
+    display: inline-block;
+  }
+  .squirtle {
+    width: 50px;
+    height: 50px;
+    background-image: url('squirtle.png');
+    display: inline-block;
+  }
+  .growlithe {
+    width: 50px;
+    height: 50px;
+    background-image: url('growlithe.png');
+    display: inline-block;
+  }
+  /*jogo*/
+  #world{
+  margin: 300px;
+  margin-top: 40px;
+  
+  }  
+
+/*setinhas andar*/
+
+.setas{
+  width: 16%;
+  position: relative;
+  bottom: 380px;
+  left: 960px;
+}
+#jogadores {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+  }
+.up {
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+margin-left: 70px;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 25px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.up:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.up:active {
+position:relative;
+top:1px;
+}
+.down {
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 25px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.down:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.down:active {
+position:relative;
+top:1px;
+}
+.right {
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 25px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.right:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.right:active {
+position:relative;
+top:1px;
+}
+.left {
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 25px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.left:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.left:active {
+position:relative;
+top:1px;
+}
+.form{
+  margin: 15px;
+ 
+}
+.estatistica{
+  margin-top: 20px;
+}
+input{
+  width: 20%;
+  background: transparent;
+  border: solid 1px rgb(255, 255, 255);
+  padding: 15px 10px;
+}
+ 
+table tr td{
+  margin-top: 50px;
+  border: solid 1px;
+  padding: 10px;
+}
+}
+@media only screen and (max-width: 599px) {
+  /* COMECA AQUI O CRONOMETRO*/
+  table{
+    display: inline-block;
+    margin-left: 50px ;
+    width: 500px;
+  }
+  input{
+    width: 20%;
+    background: transparent;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 15px 10px;
+  }
+button {
+  box-shadow: 3px 4px 0px 0px #8a2a21;
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background-color:#c62d1f;
+  border-radius:18px;
+  border:1px solid #d02718;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:17px;
+  font-weight:bold;
+  padding:7px 25px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #810e05;
+}
+button:hover {
+  background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+  background-color:#f24437;
+}
+button:active {
+  position:relative;
+  top:1px;
+}
+  #contador{
+    font-size: 10px;
+    color: #ffffff;
+  }
+  #score{
+    margin: 10px;
+  }
+  .bt-parar {
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:10px;
+    font-weight:bold;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .bt-parar:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+  }
+  .bt-parar:active {
+    position:relative;
+    top:1px;
+  }
+  video{
+    display: block;
+    margin: 5px;
+    width: 300px;
+  }
+  #jogadores {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+  }
+  .growlitheEscolher{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: 20px;
+    color:#ffffff;
+    font-size:7px;
+    font-weight:bold;
+    padding:7px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .growlitheEscolher:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+    }
+  .growlitheEscolher:active {
+    position:relative;
+    top:1px;
+  }
+  .pikachuEscolher{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: 70px;
+    color:#ffffff;
+    font-size:7px;
+    font-weight:bold;
+    padding:7px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .pikachuEscolher:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+    }
+  .pikachuEscolher:active {
+    position:relative;
+    top:1px;
+  }
+  .squirtleEscolher{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: 70px;
+    color:#ffffff;
+    font-size:7px;
+    font-weight:bold;
+    padding:7px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .squirtleEscolher:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+    }
+  .squirtleEscolher:active {
+    position:relative;
+    top:1px;
+  }
+  
+/*squirthe*/ 
+
+.mar {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/marr.png');
+  display: inline-block;
+}
+
+.areia {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/ar.jpg');
+  display: inline-block;
+}
+
+.peixe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/peixee.png');
+  display: inline-block;
+}
+
+.vida {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/morangoo.jpg');
+  display: inline-block;
+}
+
+.polvo {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/polvoo.png');
+  display: inline-block;
+}
+
+.borboleta {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/borboletaa.jpg');
+  display: inline-block;
+}
+
+.barco {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/barcoo.png');
+  display: inline-block;
+}
+
+.tubarao {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/tubaraoooo.png');
+  display: inline-block;
+}
+
+.pika {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/pikaa.jpg');
+  display: inline-block;
+}
+.squir {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/squirr.jpg');
+  display: inline-block;
+}
+.growl {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/growlll.jpg');
+  display: inline-block;
+}
+
+.end {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/eveeeeeee.jpg');
+  display: inline-block;
+}
+ 
+
+  #growlitheimg{
+    width: 100px;
+  }
+  #pikachuimg{
+    width: 100px;
+  }
+  #squirtleimg{
+    width: 100px;
+  }
+
+/*tabuleiro Growlithe - 3*/
+.lavaGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/lavaG2.png');
+  display: inline-block;
+}
+.pedraGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/chaoG2.jpg');
+  display: inline-block;
+}
+.camaraoGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/camaraoG2.png');
+  display: inline-block;
+}
+.vidaGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/vidaG2.png');
+  display: inline-block;
+}
+.caminhoGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/caminhoG2.png');
+  display: inline-block;
+}
+.eeveeGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/Eve.png');
+  display: inline-block;
+}
+.pikachuGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/pikachu2.png');
+  display: inline-block;
+}
+.squirtleGrowlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/squirtle2.png');
+  display: inline-block;
+}
+.Growlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('imagens/growlithe2.png');
+  display: inline-block;
+}
+
+.setas{
+  width: 16%;
+  position: relative;
+  bottom: 38px;
+  left: 380px;
+}
+.up {
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+margin-left: 50px;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 15px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.up:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.up:active {
+position:relative;
+top:1px;
+}
+.down {
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 15px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.down:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.down:active {
+position:relative;
+top:1px;
+}
+.right {
+margin-left: 5px;
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 15px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.right:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.right:active {
+position:relative;
+top:1px;
+}
+.left {
+box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 15px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+.left:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+.left:active {
+position:relative;
+top:1px;
+}
+
+/*tabuleiro Pikachu - 1*/
+.wall {
+  width: 25px;
+  height: 25px;
+  background-image: url('wall2.png');
+  display: inline-block;
+}
+
+
+.caminho {
+  width: 25px;
+  height: 25px;
+  background-image: url('walll2.png');
+  display: inline-block;
+}
+.ground {
+  width: 25px;
+  height: 25px;
+  background-image: url('bg.png');
+  display: inline-block;
+}
+.vidaa {
+  width: 25px;
+  height: 25px;
+  background-image: url('vida2.png');
+  display: inline-block;
+}
+.eevee {
+  width: 25px;
+  height: 25px;
+  background-image: url('jogador.png');
+  display: inline-block;
+}
+.fruta {
+  width: 25px;
+  height: 25px;
+  background-image: url('frutaa2.png');
+  display: inline-block;
+}
+.arvore {
+  width: 25px;
+  height: 25px;
+  background-image: url('arvore32.png');
+  display: inline-block;
+}
+.pedra {
+  width: 25px;
+  height: 25px;
+  background-image: url('pedra2.png');
+  display: inline-block;
+}
+.agua {
+  width: 25px;
+  height: 25px;
+  background-image: url('agua2.png');
+  display: inline-block;
+}
+.ponte {
+  width: 25px;
+  height: 25px;
+  background-image: url('ponte2.png');
+  display: inline-block;
+}
+.fim {
+  width: 25px;
+  height: 25px;
+  background-image: url('eevee2.gif');
+  display: inline-block;
+}
+
+.pikachu {
+  width: 25px;
+  height: 25px;
+  background-image: url('pikachu2.png');
+  display: inline-block;
+}
+.squirtle {
+  width: 25px;
+  height: 25px;
+  background-image: url('squirtle2.png');
+  display: inline-block;
+}
+.growlithe {
+  width: 25px;
+  height: 25px;
+  background-image: url('growlithe2.png');
+  display: inline-block;
+}
+
+
+}
+
+div {
+  line-height: 0px;
+}
+/* Dados */
+.box {
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 270px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: 200ms ease-in-out;
+  text-align: center;
+  z-index: 30;
+  background-color: #313131;
+}
+.box.active{
+  transform: translate(-50%,-50%) scale(1);
+  transition: 200ms ease-in-out;
+}
+.container{
+  background-color: #313131;
+  display: inline;
+}
+.container-up{
+  background-color: #FCF3E4;
+  padding: 20px 10px 5px 10px;
+}
+.container-bottom{
+  background-color: #313131;
+}
+h1.lanca-dados{
+  color: rgb(17, 17, 17);
+  font-size: x-large;
+  width: 100%;
+  margin-left: auto;
+}
+.dice {
+  display: inline-block;
+  background-color: #313131;
+  margin: 30px 10px;
+}
+.bottom {
+  padding-top: 30px;
+}
+.butn {
+  margin-bottom: 2px;
+  margin-top: 20px;
+  background: #FCF3E4;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  color: #000;
+  font-size: 30px;
+  padding: 16px 25px 16px 25px;
+  text-decoration: none;
+  font-weight: 550;
+}
+.butn:hover {
+  background: #EFDBB6;
+  text-decoration: none;
+}
+p.Jogador{
+  font-size: large;
+  font-weight: bold;
+  color: #fff;
+}
+p.Pokémon{
+  font-size: large;
+  font-weight: bold;
+  color: #fff;
+}
+/* caixa game over*/
+.GameOver {
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 270px;
+  position: fixed;
+  top: 50%;
+  padding: 80px;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: 200ms ease-in-out;
+  text-align: center;
+  z-index: 30;
+  background-color: #313131;
+}
+.GameOver.active{
+  transform: translate(-50%,-50%) scale(1);
+  transition: 200ms ease-in-out;
+}
+.TentarNovamente {
+  border: 1px solid black;
+  margin-bottom: 2px;
+  margin-top: 20px;
+  background: #FCF3E4;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  color: #000;
+  font-size: 20px;
+  padding: 16px 25px 16px 25px;
+  text-decoration: none;
+  font-weight: 550;
+}
+.TentarNovamente:hover {
+  background: #EFDBB6;
+  text-decoration: none;
+}
+#guardar{
+  box-shadow: 3px 4px 0px 0px #8a2a21;
+background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+background-color:#c62d1f;
+border-radius:18px;
+border:1px solid #d02718;
+display:inline-block;
+cursor:pointer;
+margin-left: 70px;
+color:#ffffff;
+font-size:17px;
+font-weight:bold;
+padding:7px 25px;
+text-decoration:none;
+text-shadow:0px 1px 0px #810e05;
+}
+#guardar:hover {
+background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+background-color:#f24437;
+}
+#guardar:active {
+position:relative;
+top:1px;
+
+}
