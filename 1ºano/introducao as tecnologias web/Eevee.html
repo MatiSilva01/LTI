@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8">
+    <!-- Grupo 18, Diogo Esteves nº56927, Sonia Sousa nº56898 e Matilde Silva nº56895, PL21-->
+    <link rel="stylesheet" href="estilos/styleEevee.css">
+	<script src="scripts/comportamentoJogo.js"></script>
+    
+    <title>Jogo </title>
+</head>
+<body>
+    <header class="content">
+        <div class="header">
+                <a href="PagIn.html"><img class="image" src="imagens/logo.png" height="70" alt="Logotipo, Eevee" ></a>
+            <ul class="nav">
+                <li>Pokémon
+                    <ul class="cascata">
+                        <li><a href="pokémons.html">Caraterísticas</a></li>
+                        <li><a href="origem_historica.html">Origem</a></li>
+                    </ul>
+                </li>
+                <li><a href="Classificacoes.html">Classificação</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="Perfil.html">Perfil</a></li>
+                <li><a href="login_Registo.html">Login/Registar</a></li>
+            </ul>              
+        </div>
+        <div id="colapsedNav" class="navbarC">
+        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">×</a>
+        <a href="pokémons.html">Caraterísticas</a>
+        <a href="origem_histórica.html">Origem</a>
+        <a href="Classificacoes.html">Classificação</a>
+        <a href="suporte.html">Suporte</a>
+        <a href="login_Registo.html">Login/Registar</a>
+        </div>
+    </header> 
+    <div id="main">
+        <button class="openbutton" onclick="openNav()">☰</button>  
+    </div>
+
+      <script>
+      function openNav() {
+        document.getElementById("colapsedNav").style.height = "220px";
+      }
+      
+      function closeNav() {
+        document.getElementById("colapsedNav").style.height = "0px";
+      }
+      </script>
+        <br>
+    <div id="texto">
+        <br>
+        <h1>Eevee! </h1>
+        <br>
+        <br>
+        <p>Este é o Eevee.</p>
+        <br>
+        <p>Vai ser o teu grande amigo neste jogo e estará sempre à tua espera no fim do mapa!</p>
+    </div>
+        <br>
+    <div id="gif">
+        <iframe src="https://giphy.com/embed/f0pYRrCkBs8gg"  ></iframe><a href="https://giphy.com/gifs/pokémon-pokégraphic-gif-f0pYRrCkBs8gg"></a>   
+    </div>
+    <div id="audio">
+        <audio src="audio/eevee.m4a" controls ></audio>
+    </div>
+    <br>
+    <div id=tutorial>
+        <h1>Tutorial</h1>
+        <br>
+        <p>Se és novo por aqui, segue este tutorial e aprende a jogar connosco!</p>
+        <br>
+        <video controls>
+            <source src="videos/videoTutorialPokemon.mp4" type="video/mp4">
+        </video>
+        <br>
+    </div>
+    <div id="Jogo">
+        <div><h1>Jogar</h1>
+        <br>
+        <br>
+        <br>
+        <p>Escolha um jogador</p>
+        </div>
+
+        <div id="jogadores">
+            <img id="growlitheimg" src="imagens/growlithe.png">
+            <img id="pikachuimg" src="imagens/pikachu.png">
+            <img id="squirtleimg" src="imagens/squirtle.png">
+        </div>
+        <div id="botoesEscolher">
+            <button class="growlitheEscolher" onclick="desenharTabuleiro3(); Verifica(); alert('Caso não seja o primeiro jogo que está a jogar, por favor faça refresh da página e depois escolha o jogador.');iniciar();">Growlithe 3/3</button>
+            <button class="pikachuEscolher" onclick="desenharTabuleiro2(); Verifica();  alert('Caso não seja o primeiro jogo que está a jogar, por favor faça refresh da página e depois escolha o jogador.');iniciar();">Pikachu 2/3</button>
+            <button class="squirtleEscolher" onclick="desenharTabuleiro(); Verifica(); alert('Caso não seja o primeiro jogo que está a jogar, por favor faça refresh da página e depois escolha o jogador.');iniciar();">Squirtle 1/3</button>
+        </div>
+        <div id="estatistica">
+        <div class="cronometroJogo">
+            <h1 id="contador">00:00:00</h1>
+            <button  onclick="parar();window.location.reload()" class="bt-parar">Terminar Jogo</button>
+        </div>
+        <div id="score"></div>
+        </div>
+        <br>
+        <br>
+        <div id='world'>	
+		</div>
+        <div class="setas">
+            <button onclick="cima()" class="up">&uarr;</button>
+            <br>
+            <button onclick="esquerda()" class="left">&larr;</button>
+            <button onclick="baixo()" class="down">&darr;</button>
+            <button onclick="direita()" class="right">&rarr;</button>
+        </div>
+        <div id="output"></div>
+        <div id="estatistica">
+            <form >
+                <br>
+                <div class="form">
+                    <input type="text" name="nome" id="nome" placeholder="Insira o nome " required>
+                </div>
+
+                <div class="form">
+                    <button id="botaoTabela" type="submit" onclick="tabela(event);">Tabela</button>
+                </div>
+            
+            </form>
+        </div>
+        <!--Dados-->
+        <div class="box" id="box">
+            <div class="container-up">
+                <h1 class="lanca-dados">Lança os dados</h1>
+            </div>
+            <div class="container">
+                <div class="dice">
+                    <p class="Jogador">Jogador</p>
+                    <img class="img1" src="imagens/dice6.png" width="100px">
+                </div>
+
+                <div class="dice">
+                    <p class="Pokémon">Pokémon</p>
+                    <img class="img2" src="imagens/dice6.png" width="100px">
+                </div>
+            </div>
+
+            <div class="container-bottom">
+                <button type="button" class="butn"
+                    onClick="rollTheDice()">
+                    Lançar dados
+                </button>
+            </div>
+        </div>
+        
+        <!--Perdeu-->
+        <div class="GameOver" id="GameOver">
+            <h2 class="mensagemGameOver">ACABOU O JOGO</h2>
+            <button class="TentarNovamente" id="TentarNovamente" onclick="parar();window.location.reload()">Tentar novamente</button>
+        </div>
+    </div>
+    <footer id="rodape">
+        <p>ITW - 2021</p>
+        <p>Diogo Esteves, Sónia Sousa e Matilde Silva </p>
+    </footer>
+    <script type="text/javascript">
+        const tabela = e => {
+            let info = {
+                Nome: document.getElementById('nome').value,
+                Formato: localStorage.getItem('formato'),
+                Score: localStorage.getItem('score')
+            }
+            localStorage.setItem('formData33', JSON.stringify(info));
+            info();
+            e.preventDefault();
+        }
+
+
+        function info(){
+            let {Nome, Formato, Score} = JSON.parse(localStorage.getItem('formData33')) || {};
+            
+
+            
+            var output = document.getElementById('output');
+            output.innerHTML = `
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Nome</td>
+                        <td>${Nome}</td>
+                    </tr>
+                    <tr>
+                        <td>Tempo</td>
+                        <td>${Formato}</td>
+                    </tr>
+                    <tr>
+                        <td>Pontuação</td>
+                        <td>${Score}</td>
+                    </tr>
+       
+                </tbody>
+            </table>`;
+        }
+        info();
+</script>
+</body>
+
+</html>

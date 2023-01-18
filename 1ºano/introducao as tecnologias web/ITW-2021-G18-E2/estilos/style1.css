@@ -1,0 +1,71 @@
+    .wall {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/wall.png);
+        display: inline-block;
+    }
+    .vida {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/vida.png);
+        display: inline-block;
+    }
+    .ground {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/bg.png);
+        display: inline-block;
+    }
+    .jogador {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/jogador.png);
+        display: inline-block;
+    }
+    .fruta {
+            width: 50px;
+        height: 50px;
+        background-image: url(imagens/frutaa.png);
+        display: inline-block;
+    }
+    .arvore {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/arvore3.png);
+        display: inline-block;
+    }
+    .pedra {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/pedra.png);
+        display: inline-block;
+    }
+    .agua {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/agua.jpg);
+        display: inline-block;
+    }
+    .ponte {
+        width: 50px;
+        height: 50px;
+            background-image: url(imagens/ponte.png);
+        display: inline-block;
+    }
+    .fim {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/eevee.png);
+        display: inline-block;
+    }
+    .chao {
+        width: 50px;
+        height: 50px;
+        background-image: url(imagens/walll.png);
+        display: inline-block;
+    }
+    div {
+        line-height: 0px;
+    }
+    
+        
