@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/business/HandlerCriarLeilao.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/business/HandlerGerirLeilao.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/business/Leilao.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/business/Licitacao.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/business/Utilizador.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/client/I18n.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/client/IO_.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/client/SimpleClient_.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/test/java/business/SistemaTest.java" charset="UTF-8" />
+  </component>
+</project>
